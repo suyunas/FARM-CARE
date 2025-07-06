@@ -3,7 +3,7 @@
 **Farm Care** is an AI-based framework for **automated, non-invasive stress detection** in sows using facial images and deep learning.  
 This repository includes code, data samples, notebooks, and documentation for:
 
-- 📄 **Study 1:** Stress classification within one generation (published)
+- 📄 **Study 1:** Stress classification within one generation
 - 🧬 **Study 2:** Cross-generation evaluation (training on parents, testing on offspring)
 
 ---

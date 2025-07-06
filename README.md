@@ -1,18 +1,16 @@
 # FARM interventions to Control Antimicrobial ResistancE (FARM-CARE)
 
-In this project we have utilized an AI-based framework for **automated, non-invasive stress detection** in sows using facial images and deep learning  
+In this project we have utilized an AI-based framework for **automated, non-invasive stress detection** in sows using facial images and deep learning.
 This repository includes code, data samples, notebooks, and documentation for:
 
 - **Study 1:** Stress classification within one generation
-- **Study 2:** Cross-generation evaluation (training on parents, testing on offsprings)
+- **Study 2:** Cross-generation evaluation (training on parents, testing on offsprings) [In-progress]
 
 ---
 
 ## Project Motivation
 
-Livestock stress impacts animal welfare, productivity, and farm economics
-Traditional stress assessment methods are manual, subjective, and time-consuming
-Our method uses facial region analysis and deep learning to enable reliable, repeatable, and real-time stress classification in sows
+Livestock stress impacts animal welfare, productivity, and farm economics. Traditional stress assessment methods are manual, subjective, and time-consuming. Our method uses facial region analysis and deep learning to enable reliable, repeatable, and real-time stress classification in sows.
 
 ---
 
@@ -32,7 +30,7 @@ image cropping and bar removal from full view (middle-bottom) and segmented face
 - Redundant Image filter using **VGG16**
 
 ![image](https://github.com/user-attachments/assets/5c6fd238-8fc3-4f14-816b-b65af7874a5c)
-Figure 2. Data collection and processing pipeline.
+                                       Figure 2. Data collection and processing pipeline.
 
 **Models** 
 - Image augmentation and filtering during training to improve data quality
@@ -59,7 +57,7 @@ Figure 2. Data collection and processing pipeline.
 Table 1. Model predictions for Low-Stressed (LS) and High-Stressed (HS) sow images across different
 deep learning architectures.
 
-## Conclusion
+## Findings
 
 The Vision Transformer model (ViT) emerged as the most effective architecture for classifying stress states in sows, consistently outperforming other models across multiple evaluation batches. It achieved the highest average accuracy of 0.75, with an F1-score of 0.78 overall, and performed particularly well in identifying high-stressed sows—achieving up to 0.88 F1-score in its best-performing batch.
 

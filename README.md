@@ -1,4 +1,4 @@
-# 🐷 FARM interventions to Control Antimicrobial ResistancE (**FARM-CARE**)
+# FARM interventions to Control Antimicrobial ResistancE (**FARM-CARE**)
 
 In this project, we have utilized an AI-based framework for **automated, non-invasive stress detection** in sows using facial images and deep learning.  
 This repository includes code, data samples, notebooks, and documentation for:
@@ -8,15 +8,15 @@ This repository includes code, data samples, notebooks, and documentation for:
 
 ---
 
-## 📚 Project Motivation
+## Project Motivation
 
 Livestock stress impacts animal welfare, productivity, and farm economics. Traditional stress assessment methods are manual, subjective, and time-consuming. Our method uses facial region analysis and deep learning to enable reliable, repeatable, and real-time stress classification in sows.
 
 ---
 
-## 🧩 Methodology
+## Methodology
 
-### **📸 Data Collection**
+### **Data Collection**
 
 - Images of sows from multiple cameras covering different angles.
 
@@ -25,7 +25,7 @@ Livestock stress impacts animal welfare, productivity, and farm economics. Tradi
 
 ---
 
-### **⚙️ Preprocessing**
+### **Preprocessing**
 
 - Image Labelling using **Segment Anything**
 - Automatic facial detection and cropping using **YOLOv8**
@@ -37,7 +37,7 @@ Livestock stress impacts animal welfare, productivity, and farm economics. Tradi
 
 ---
 
-### **🤖 Models**
+### **Models**
 
 - Image augmentation and filtering during training to improve data quality.
 - Pre-trained deep learning models: **ConvNeXt, EfficientNetV2, MobileNetV3, RegNet, and Vision Transformer (ViT)**.
@@ -45,20 +45,20 @@ Livestock stress impacts animal welfare, productivity, and farm economics. Tradi
 
 ---
 
-### **🧪 Experiments**
+### **Experiments**
 
 - **Within-generation:** Train/test on same generation (12 sows) using leave-one-out cross-validation (LOOCV) approach.
 - **Cross-generation:** Train on 12 parent sows, test on their 48 offspring to assess model generalization.
 
 ---
 
-### **📊 Performance Metrics**
+### **Performance Metrics**
 
 - Accuracy, precision, recall, confusion matrix.
 
 ---
 
-## 🏆 Key Results
+## Key Results
 
 - **High classification accuracy** with Vision Transformers (ViT).
 - Robust detection with various data augmentation settings.
@@ -69,17 +69,17 @@ Livestock stress impacts animal welfare, productivity, and farm economics. Tradi
 
 ---
 
-## ✅ Findings
+## Findings
 
 The Vision Transformer model (ViT) emerged as the most effective architecture for classifying stress states in sows, consistently outperforming other models across multiple evaluation batches. It achieved the highest average accuracy of **0.75**, with an F1-score of **0.78** overall, and performed particularly well in identifying high-stressed sows — achieving up to **0.88 F1-score** in its best-performing batch.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to run the training and testing workflows:
 
-### 📥 Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/FARM-CARE.git
@@ -88,7 +88,7 @@ cd FARM-CARE
 
 ---
 
-### 🗂️ Prepare Input Data
+### Prepare Input Data
 
 - Your input images should be listed in **CSV or Excel** files.
 - The **first column** must contain the **Path** (image path).
@@ -96,7 +96,7 @@ cd FARM-CARE
 
 ---
 
-### 🏋️‍♂️ Run Training
+### Run Training
 
 ```bash
 # Navigate to the training directory
@@ -108,11 +108,11 @@ python Train_Parent_Data.py
 
 ---
 
-### 🧪 Run Testing
+### Run Testing
 
 ```bash
 # Navigate to the testing directory
-cd ../Testing_Parents
+cd Testing_Parents
 
 # Run the testing script
 python Test_Parent_Data.py
@@ -120,7 +120,7 @@ python Test_Parent_Data.py
 
 ---
 
-## 💡 Notes
+## Notes
 
 Make sure your image paths in your CSV/Excel files are correct and relative to your project folder.
 
@@ -132,7 +132,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📁 Example Project Structure
+## Example Project Structure
 
 ```plaintext
 FARM-CARE/
@@ -154,18 +154,14 @@ FARM-CARE/
 
 ---
 
-## 💰 Funding
+## Funding
 
 This research was funded by the Joint Programming Initiative on Antimicrobial Resistance (JPIAMR) under the FARM-CARE project, ‘FARM interventions to Control Antimicrobial ResistancE – Full Stage’ (Project ID: 7429446), and by the Medical Research Council (MRC), UK (Grant Number: MR/W031264/1).
 
 ---
 
-## 🐷 Institutional Review Board Statement
+## Institutional Review Board Statement
 
 This study underwent internal ethical review by both SRUC’s and UWE Bristol’s Animal Welfare and Ethical Review Bodies (ED AE 16-2019 and R101) and was carried out under the UK Home Office license (P3850A80D).
 
----
 
-## 📞 Contact
-
-Feel free to open an issue or reach out with any questions! ✨🐷

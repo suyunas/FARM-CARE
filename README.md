@@ -30,7 +30,7 @@ image cropping and bar removal from full view (middle-bottom) and segmented face
 - Redundant Image filter using **VGG16**
 
 ![image](https://github.com/user-attachments/assets/5c6fd238-8fc3-4f14-816b-b65af7874a5c)
-                                       Figure 2. Data collection and processing pipeline.
+Figure 2. Data collection and processing pipeline.
 
 **Models** 
 - Image augmentation and filtering during training to improve data quality
